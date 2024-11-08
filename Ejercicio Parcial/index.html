@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Deportiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Tienda de Productos Deportivos</h1>
+    <div class="main-container">
+        <div class="left-section">
+            <h2>Lista de Productos</h2>
+            
+            <input type="text" id="search-bar" placeholder="Buscar producto..." class="search-bar">
+
+            <div id="product-list" class="product-list">
+                <div class="product">
+                    <label for="cantidad-balon">Balón - $50,000 COP</label>
+                    <input type="number" id="cantidad-balon" min="0" value="0">
+                </div>
+                <div class="product">
+                    <label for="cantidad-uniforme">Uniforme - $75,000 COP</label>
+                    <input type="number" id="cantidad-uniforme" min="0" value="0">
+                </div>
+                <div class="product">
+                    <label for="cantidad-peto">Peto - $12,000 COP</label>
+                    <input type="number" id="cantidad-peto" min="0" value="0">
+                </div>
+                <div class="product">
+                    <label for="cantidad-cono">Cono - $15,000 COP</label>
+                    <input type="number" id="cantidad-cono" min="0" value="0">
+                </div>
+                <div class="product">
+                    <label for="cantidad-guayos">Guayos - $120,000 COP</label>
+                    <input type="number" id="cantidad-guayos" min="0" value="0">
+                </div>
+                <div class="product">
+                    <label for="cantidad-medias">Medias - $10,000 COP</label>
+                    <input type="number" id="cantidad-medias" min="0" value="0">
+                </div>
+                <div class="product">
+                    <label for="cantidad-licras">Licras - $45,000 COP</label>
+                    <input type="number" id="cantidad-licras" min="0" value="0">
+                </div>
+                <div class="product">
+                    <label for="cantidad-zapatillas">Zapatillas de Futsala - $85,000 COP</label>
+                    <input type="number" id="cantidad-zapatillas" min="0" value="0">
+                </div>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <h2>Resumen de Compra</h2>
+            <div id="selected-products"></div>
+            <div id="total-price">Precio Total: $0 COP</div>
+            <button id="calculate-btn">Calcular Total</button>
+            <button id="reset-btn">Eliminar Items</button>
+            <button id="buy-btn">Comprar</button>
+            <div id="purchase-summary" class="purchase-summary">
+                
+            </div>
+            <button id="confirm-btn" style="display: none;">Imprimir Factura</button>
+        </div>
+        
+        
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
